@@ -1,0 +1,18 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "Just a bot for control server maybe more later",
+  "main": "app.js",
+  "scripts": {
+    "clean": "del /s /q build",
+    "build": "tsc --build",
+    "start": "npm run clean && npm run build && node build/app.js",
+    "startNoClean": "npm run build && node build/app.js"
+  },
+  "author": "ivanhi0 (idbod)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "typescript": "^5.5.4"
+  }
+}
